@@ -1,0 +1,7 @@
+<div class="container">
+    <div class="task" *ngFor="let t of tasks; let id = index;">
+        <p>{{ t.description }}</p>
+        <mark>{{ t.status }}</mark>
+    </div>
+    <a [RouterLink]="'/item/'+id">Show details</a>
+</div>
